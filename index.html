@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#031014">
+<meta name="description" content="ECONEXA: Guardiões da Ilha — experiência interativa de aventura, tecnologia e educação ambiental.">
+<title>ECONEXA — Guardiões da Ilha</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="boot" class="boot"><div class="boot-logo">ECONEXA</div><div class="boot-line"><i></i></div><small>INICIALIZANDO SISTEMA NEX...</small></div>
+
+<div class="page-progress"><span id="pageProgress"></span></div>
+
+<header class="nav" id="nav">
+  <a href="#inicio" class="brand"><img src="assets/outros/logo-econexa.jpeg" alt="ECONEXA GAMES"></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+  <nav id="mainMenu">
+    <a href="#inicio">INÍCIO</a><a href="#guardioes">GUARDIÕES</a><a href="#viloes">VILÕES</a><a href="#mundo">MUNDO</a>
+    <a href="#missoes">MISSÕES</a><a href="#nex">NEX</a><a href="#quiz">QUIZ</a><a href="#minigames">MINIGAMES</a><a href="#equipe">EQUIPE</a>
+  </nav>
+  <button class="hud-mini" id="soundToggle" title="Ativar sons">🔊 <span>SOM</span></button>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-bg"></div><div class="grid"></div><div class="mist mist-a"></div><div class="mist mist-b"></div>
+  <div id="particles" class="particles"></div>
+  <div class="hero-content reveal">
+    <div class="eyebrow"><span></span> ECONEXA GAMES • NEX SYSTEM ONLINE</div>
+    <img class="hero-logo" src="assets/outros/logo-econexa.jpeg" alt="ECONEXA GAMES">
+    <img class="hero-sublogo" src="assets/outros/logo-guardioes-da-ilha.jpeg" alt="Guardiões da Ilha">
+    <p class="hero-copy">Quando a ilha perde seu equilíbrio, quatro jovens precisam recuperar aquilo que a Poluição está destruindo.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="#missoes">JOGAR AGORA <b>→</b></a><a class="btn btn-ghost" href="#guardioes">CONHECER O UNIVERSO</a></div>
+    <div class="scroll-cue"><span></span> SCROLL PARA EXPLORAR</div>
+  </div>
+  <div class="hero-side"><div>01</div><span></span><div>05</div></div>
+</section>
+
+<section class="section world" id="mundo">
+  <div class="section-heading reveal"><div class="eyebrow green">01 • O UNIVERSO</div><h2>UMA ILHA <em>EM PERIGO</em></h2><p>São Luís ganhou uma nova face. EcoNexa apresenta uma representação ficcional da cidade, transformando referências ambientais e culturais em um território de aventura — sem reproduzir a cidade cartograficamente.</p></div>
+  <div class="world-grid">
+    <article class="world-card reveal"><span>🌿</span><h3>NATUREZA</h3><p>Ecossistemas, vegetação e áreas degradadas entram no centro da missão.</p><i>RECUPERAR</i></article>
+    <article class="world-card reveal"><span>💧</span><h3>ÁGUAS</h3><p>Rios, praias e zonas aquáticas revelam pistas sobre a contaminação.</p><i>PURIFICAR</i></article>
+    <article class="world-card reveal"><span>⚡</span><h3>ENERGIA</h3><p>Eficiência e escolhas inteligentes podem mudar o destino da ilha.</p><i>OTIMIZAR</i></article>
+    <article class="world-card reveal"><span>🤖</span><h3>TECNOLOGIA</h3><p>A NEX transforma dados ambientais em decisões durante a aventura.</p><i>ANALISAR</i></article>
+  </div>
+</section>
+
+<section class="section guardians" id="guardioes">
+  <div class="section-heading reveal"><div class="eyebrow green">02 • A EQUIPE</div><h2>OS <em>GUARDIÕES</em></h2><p>Quatro poderes. Uma missão. Clique em um Guardião para abrir sua ficha.</p></div>
+  <div class="character-grid">
+    <article class="character-card nature reveal" data-character="luna"><div class="char-image"><img src="assets/personagens/luna.jpeg" alt="Luna"></div><div class="char-glow"></div><div class="char-info"><small>GUARDIÃ DA NATUREZA</small><h3>LUNA</h3><strong>REGENERAR</strong><p>Recupera áreas degradadas e devolve vitalidade aos ambientes.</p></div><button class="card-open">VER FICHA ↗</button></article>
+    <article class="character-card tech reveal" data-character="iris"><div class="char-image"><img src="assets/personagens/iris.jpeg" alt="Íris"></div><div class="char-glow"></div><div class="char-info"><small>GUARDIÃ DA TECNOLOGIA</small><h3>ÍRIS</h3><strong>ANALISAR</strong><p>Utiliza a NEX para identificar problemas, pistas e vulnerabilidades.</p></div><button class="card-open">VER FICHA ↗</button></article>
+    <article class="character-card water reveal" data-character="andrew"><div class="char-image"><img src="assets/personagens/andrew.jpeg" alt="Andrew"></div><div class="char-glow"></div><div class="char-info"><small>GUARDIÃO DAS ÁGUAS</small><h3>ANDREW</h3><strong>PURIFICAR</strong><p>Reduz a contaminação das áreas aquáticas.</p></div><button class="card-open">VER FICHA ↗</button></article>
+    <article class="character-card energy reveal" data-character="theo"><div class="char-image"><img src="assets/personagens/theo.jpeg" alt="Theo"></div><div class="char-glow"></div><div class="char-info"><small>GUARDIÃO DA ENERGIA</small><h3>THEO</h3><strong>OTIMIZAR</strong><p>Reduz desperdícios e melhora a eficiência energética.</p></div><button class="card-open">VER FICHA ↗</button></article>
+  </div>
+</section>
+
+<section class="section villains" id="viloes">
+  <div class="villain-noise"></div>
+  <div class="section-heading reveal"><div class="eyebrow red">03 • AMEAÇA DETECTADA</div><h2>OS VILÕES <em>DA POLUIÇÃO</em></h2><p>Quando o desequilíbrio cresce, eles despertam.</p></div>
+  <div class="villain-grid">
+    <article class="villain-card reveal" data-villain="valtor"><img src="assets/viloes/valtor.jpeg" alt="Valtor"><div class="villain-info"><small>SENHOR DO LIXO</small><h3>VALTOR</h3><p>RESÍDUOS • DESCARTE • ACÚMULO</p><b>FRAQUEZA: RECICLAGEM</b></div></article>
+    <article class="villain-card reveal" data-villain="stormy"><img src="assets/viloes/stormy.jpeg" alt="Stormy"><div class="villain-info"><small>DAMA DA TEMPESTADE</small><h3>STORMY</h3><p>POLUIÇÃO ATMOSFÉRICA</p><b>FRAQUEZA: REDUÇÃO DA POLUIÇÃO</b></div></article>
+    <article class="villain-card reveal" data-villain="ogron"><img src="assets/viloes/ogron.jpeg" alt="Ogron"><div class="villain-info"><small>MONSTRO DAS ILUSÕES</small><h3>OGRON</h3><p>CONTAMINAÇÃO DAS ÁGUAS</p><b>FRAQUEZA: PRESERVAÇÃO DAS ÁGUAS</b></div></article>
+    <article class="villain-card reveal" data-villain="tritanus"><img src="assets/viloes/tritanus.jpeg" alt="Tritanus"><div class="villain-info"><small>O GRANDE VILÃO</small><h3>TRITANUS</h3><p>DEGRADAÇÃO AMBIENTAL</p><b>FRAQUEZA: UNIÃO DOS GUARDIÕES</b></div></article>
+  </div>
+</section>
+
+<section class="section map-section" id="mapa">
+  <div class="section-heading reveal"><div class="eyebrow green">04 • EXPLORAÇÃO</div><h2>MAPA DA <em>ILHA</em></h2><p>As regiões se conectam. Complete missões para liberar novos territórios.</p></div>
+  <div class="map">
+    <div class="map-grid"></div><div class="route r1"></div><div class="route r2"></div><div class="route r3"></div><div class="route r4"></div>
+    <button class="map-node active" style="--x:14%;--y:57%" data-area="Centro Histórico"><span>01</span><b>CENTRO<br>HISTÓRICO</b></button>
+    <button class="map-node active" style="--x:35%;--y:30%" data-area="Itaqui-Bacanga"><span>02</span><b>ITAQUI-<br>BACANGA</b></button>
+    <button class="map-node active" style="--x:55%;--y:65%" data-area="Região das Praias"><span>03</span><b>REGIÃO<br>DAS PRAIAS</b></button>
+    <button class="map-node locked" style="--x:75%;--y:32%" data-area="Área Degradada"><span>🔒</span><b>ÁREA<br>DEGRADADA</b></button>
+    <button class="map-node locked boss" style="--x:87%;--y:70%" data-area="Núcleo Final"><span>🔒</span><b>NÚCLEO<br>FINAL</b></button>
+    <div class="map-label">NEX CARTOGRAPHY // FICTIONAL TERRITORY</div>
+  </div>
+</section>
+
+<section class="section missions" id="missoes">
+  <div class="section-heading reveal"><div class="eyebrow green">05 • OPERAÇÕES</div><h2>MISSÕES <em>ATIVAS</em></h2><p>Recupere a ilha, acumule sustentabilidade e desbloqueie novas áreas.</p></div>
+  <div class="hud-panel reveal">
+    <div><small>SUSTENTABILIDADE</small><strong id="sustainability">2.450</strong></div><div><small>CRISTAIS</small><strong id="crystals">84</strong></div><div><small>MEDALHAS</small><strong id="medals">6</strong></div><div><small>ÁREAS RECUPERADAS</small><strong id="areas">3/5</strong></div>
+  </div>
+  <div class="mission-list">
+    <article class="mission active reveal"><span class="mission-num">01</span><div><small>OPERAÇÃO INICIAL</small><h3>O PROBLEMA DOS RESÍDUOS</h3><p>Identifique e organize os resíduos espalhados pela região.</p><div class="reward">+500 PONTOS • +10 CRISTAIS</div></div><button class="mission-btn" data-reward="500">INICIAR</button></article>
+    <article class="mission reveal"><span class="mission-num">02</span><div><small>INVESTIGAÇÃO</small><h3>SINAIS DE POLUIÇÃO</h3><p>Localize a origem dos sinais detectados pela NEX.</p><div class="reward">+400 PONTOS • +8 CRISTAIS</div></div><button class="mission-btn" data-reward="400">INICIAR</button></article>
+    <article class="mission reveal"><span class="mission-num">03</span><div><small>OPERAÇÃO AQUÁTICA</small><h3>PROTEÇÃO DAS ÁGUAS</h3><p>Reduza a contaminação antes que ela alcance novas áreas.</p><div class="reward">+650 PONTOS • +12 CRISTAIS</div></div><button class="mission-btn" data-reward="650">INICIAR</button></article>
+    <article class="mission reveal"><span class="mission-num">04</span><div><small>RESTAURAÇÃO</small><h3>RECUPERAÇÃO AMBIENTAL</h3><p>Recupere uma zona degradada e reative seu ecossistema.</p><div class="reward">+800 PONTOS • +15 CRISTAIS</div></div><button class="mission-btn" data-reward="800">INICIAR</button></article>
+    <article class="mission boss-mission reveal"><span class="mission-num">∞</span><div><small>MISSÃO FINAL</small><h3>O CONFRONTO CONTRA TRITANUS</h3><p>Una os Guardiões para enfrentar a maior ameaça da ilha.</p><div class="reward">+1.500 PONTOS • MEDALHA</div></div><button class="mission-btn boss-btn" data-reward="1500">BATALHA</button></article>
+  </div>
+</section>
+
+<section class="section combat-section" id="combate">
+  <div class="section-heading reveal"><div class="eyebrow red">06 • COMBATE NEX</div><h2>LUNA <em>VS</em> VALTOR</h2><p>Use habilidades estratégicas para derrubar a energia do vilão.</p></div>
+  <div class="combat reveal">
+    <div class="fighter"><div class="fighter-image"><img src="assets/personagens/luna.jpeg" alt="Luna"></div><div class="fighter-name">LUNA <span>100%</span></div><div class="bar"><i id="lunaBar"></i></div></div>
+    <div class="vs">VS<div id="combatLog">SISTEMA PRONTO</div></div>
+    <div class="fighter enemy"><div class="fighter-image"><img src="assets/viloes/valtor.jpeg" alt="Valtor"></div><div class="fighter-name">VALTOR <span id="valtorHp">100%</span></div><div class="bar"><i id="valtorBar"></i></div></div>
+  </div>
+  <div class="skill-row"><button data-skill="regenerar">🌿 REGENERAR</button><button data-skill="analisar">🔎 ANALISAR</button><button data-skill="purificar">💧 PURIFICAR</button><button data-skill="otimizar">⚡ OTIMIZAR</button></div>
+</section>
+
+<section class="section nex" id="nex">
+  <div class="nex-orbit"></div>
+  <div class="section-heading reveal"><div class="eyebrow cyan">07 • INTELIGÊNCIA</div><h2><em>NEX</em></h2><p>A inteligência por trás da investigação.</p></div>
+  <div class="nex-console reveal">
+    <div class="scanline"></div><div class="console-head"><b>NEX SYSTEM</b><span>● ONLINE</span></div>
+    <div class="nex-main"><div class="radar"><div class="radar-sweep"></div><div class="radar-dot d1"></div><div class="radar-dot d2"></div><div class="radar-ring"></div></div>
+      <div class="analysis"><small>ANÁLISE AMBIENTAL</small><h3 id="nexProblem">PROBLEMA DETECTADO</h3><div class="metric"><span>NÍVEL</span><b id="nexLevel">72%</b><i><em id="nexMeter"></em></i></div><p><span>ORIGEM PROVÁVEL:</span> <b id="nexOrigin">ÁREA AQUÁTICA</b></p><p class="recommend"><span>RECOMENDAÇÃO:</span> <b id="nexRecommendation">"Investigue a fonte antes de agir."</b></p><button class="btn btn-primary" id="scanBtn">INICIAR ANÁLISE</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="section quiz-section" id="quiz">
+  <div class="section-heading reveal"><div class="eyebrow green">08 • DESAFIO</div><h2>DESAFIO DOS <em>GUARDIÕES</em></h2><p>Você conhece os poderes da equipe? Resolva situações ambientais como se estivesse dentro do jogo.</p></div>
+  <div id="quizIntro" class="quiz-intro reveal">
+    <div class="quiz-team"><img src="assets/personagens/luna.jpeg" alt="Luna"><img src="assets/personagens/iris.jpeg" alt="Íris"><img src="assets/personagens/andrew.jpeg" alt="Andrew"><img src="assets/personagens/theo.jpeg" alt="Theo"></div>
+    <div><h3>CONHEÇA OS GUARDIÕES</h3><p>🌿 LUNA — REGENERAR &nbsp; • &nbsp; 🔎 ÍRIS — ANALISAR &nbsp; • &nbsp; 💧 ANDREW — PURIFICAR &nbsp; • &nbsp; ⚡ THEO — OTIMIZAR</p><button class="btn btn-primary" id="startQuiz">COMEÇAR DESAFIO</button></div>
+  </div>
+  <div id="quizGame" class="quiz-game hidden">
+    <div class="quiz-top"><div><small>DESAFIO DOS GUARDIÕES</small><b id="quizCount">PERGUNTA 1/10</b></div><div>⭐ <b id="quizScore">0</b> &nbsp; 🔥 <b id="quizCombo">0</b></div></div>
+    <div class="quiz-progress"><i id="quizProgress"></i></div>
+    <div class="scenario"><span>SITUAÇÃO AMBIENTAL</span><h3 id="quizQuestion"></h3></div>
+    <div id="quizAnswers" class="quiz-answers"></div>
+    <div id="quizFeedback" class="quiz-feedback hidden"></div>
+    <button id="nextQuestion" class="btn btn-primary hidden">PRÓXIMA SITUAÇÃO →</button>
+  </div>
+  <div id="quizResult" class="quiz-result hidden"></div>
+</section>
+
+<section class="section minigames" id="minigames">
+  <div class="section-heading reveal"><div class="eyebrow cyan">09 • ARCADE</div><h2>MINI<em>GAMES</em></h2><p>Treine suas habilidades e transforme diversão em recuperação ambiental.</p></div>
+  <div class="game-tabs"><button class="active" data-game="breaker">ECO BREAKER</button><button data-game="collect">COLETA ECOLÓGICA</button><button data-game="memory">NEX MEMORY</button></div>
+  <div class="game-stage reveal" id="gameStage">
+    <div id="breakerGame" class="game-panel active"><div class="game-stats"><span>PONTOS <b id="breakScore">0</b></span><span>VIDAS <b id="breakLives">3</b></span><span>COMBO <b id="breakCombo">0</b></span></div><canvas id="breakCanvas" width="800" height="430"></canvas><p>← → ou A/D • no celular, arraste a plataforma</p><button class="btn btn-ghost" id="breakStart">INICIAR ECO BREAKER</button></div>
+    <div id="collectGame" class="game-panel"><div class="game-stats"><span>PONTOS <b id="collectScore">0</b></span><span>TEMPO <b id="collectTime">30</b></span><span>COLETADOS <b id="collectCount">0</b></span></div><div id="collectArena" class="collect-arena"></div><p>Arraste seu cursor/dedo e clique nos resíduos para coletá-los.</p><button class="btn btn-ghost" id="collectStart">INICIAR COLETA</button></div>
+    <div id="memoryGame" class="game-panel"><div class="game-stats"><span>MOVIMENTOS <b id="memoryMoves">0</b></span><span>PARES <b id="memoryPairs">0</b>/6</span></div><div id="memoryBoard" class="memory-board"></div><button class="btn btn-ghost" id="memoryStart">INICIAR ANÁLISE</button></div>
+  </div>
+</section>
+
+<section class="section education" id="educacao">
+  <div class="section-heading reveal"><div class="eyebrow green">10 • CONHECIMENTO</div><h2>JOGAR TAMBÉM É <em>APRENDER</em></h2><p>Informações rápidas para levar a missão para além da tela.</p></div>
+  <div class="edu-grid"><button class="edu-card reveal" data-edu="residuos">♻️<b>RESÍDUOS</b><span>Reduzir, reutilizar e reciclar.</span></button><button class="edu-card reveal" data-edu="agua">💧<b>ÁGUA</b><span>Proteger fontes e evitar contaminação.</span></button><button class="edu-card reveal" data-edu="energia">⚡<b>ENERGIA</b><span>Usar energia com eficiência.</span></button><button class="edu-card reveal" data-edu="natureza">🌿<b>NATUREZA</b><span>Preservar habitats e recuperar áreas.</span></button></div>
+</section>
+
+<section class="section progress-section" id="progresso">
+  <div class="section-heading reveal"><div class="eyebrow cyan">11 • CENTRAL DO JOGADOR</div><h2>MEU <em>PROGRESSO</em></h2></div>
+  <div class="progress-dashboard reveal">
+    <div class="progress-stat"><span>🌱</span><div><small>PONTOS DE SUSTENTABILIDADE</small><strong id="pSustain">2.450</strong></div></div>
+    <div class="progress-stat"><span>💎</span><div><small>CRISTAIS</small><strong id="pCrystals">84</strong></div></div>
+    <div class="progress-stat"><span>🏅</span><div><small>CONQUISTAS</small><strong id="pAchievements">2/6</strong></div></div>
+    <div class="progress-stat"><span>🧠</span><div><small>QUIZ</small><strong id="pQuiz">0/10</strong></div></div>
+    <div class="progress-stat"><span>🎮</span><div><small>MINIGAMES</small><strong id="pGames">0</strong></div></div>
+    <div class="progress-stat wide"><span>🗺️</span><div><small>ÁREAS RECUPERADAS</small><strong>4/5</strong><i class="big-progress"><em style="width:80%"></em></i></div></div>
+  </div>
+</section>
+
+<section class="section achievements" id="conquistas">
+  <div class="section-heading reveal"><div class="eyebrow green">12 • RECONHECIMENTO</div><h2>CONQUI<em>STAS</em></h2></div>
+  <div class="achievement-grid">
+    <div class="achievement unlocked reveal">🌱<b>PRIMEIRA RECUPERAÇÃO</b><span>Complete sua primeira missão.</span></div>
+    <div class="achievement unlocked reveal">♻️<b>RECICLADOR</b><span>Derrote Valtor com estratégia.</span></div>
+    <div class="achievement locked reveal">💧<b>GUARDIÃO DAS ÁGUAS</b><span>Proteja uma área aquática.</span><small>🔒 BLOQUEADA</small></div>
+    <div class="achievement locked reveal">⚡<b>ENERGIA LIMPA</b><span>Otimize uma instalação.</span><small>🔒 BLOQUEADA</small></div>
+    <div class="achievement locked reveal" id="quizAchievement">🧠<b>CONHECEDOR DOS GUARDIÕES</b><span>Identifique corretamente os poderes dos Guardiões.</span><small>🔒 BLOQUEADA</small></div>
+    <div class="achievement locked reveal">🏆<b>GUARDIÃO DA ILHA</b><span>Complete a campanha.</span><small>🔒 BLOQUEADA</small></div>
+  </div>
+</section>
+
+<section class="section team" id="equipe">
+  <div class="section-heading reveal"><div class="eyebrow cyan">13 • NOSSO TIME</div><h2>ECONEXA <em>GAMES</em></h2><p>As pessoas por trás do universo de Guardiões da Ilha.</p></div>
+  <div class="team-grid">
+    <article class="member reveal"><b>JC</b><h3>Juliane Coelho</h3><span>Diretora Geral / Fundadora</span></article>
+    <article class="member reveal"><b>NG</b><h3>Neto Garcia</h3><span>Vice-Diretor / Diretor Executivo</span></article>
+    <article class="member reveal"><b>PH</b><h3>Pedro Henrique</h3><span>Diretor de Design</span></article>
+    <article class="member reveal"><b>VH</b><h3>Victor Hugo</h3><span>Diretor de Desenvolvimento / Programador Chefe</span></article>
+    <article class="member reveal"><b>GG</b><h3>Guilherme Gomes</h3><span>Diretor de Narrativa e Roteiro</span></article>
+    <article class="member reveal"><b>AR</b><h3>Amanda Raquel</h3><span>Diretora de Educação Ambiental</span></article>
+    <article class="member reveal"><b>RR</b><h3>Ryan Ramos</h3><span>Game Designer</span></article>
+    <article class="member reveal"><b>LP</b><h3>Larissa Pimenta</h3><span>Designer de Mundo e Cenários</span></article>
+    <article class="member reveal"><b>HS</b><h3>Heloá Silva</h3><span>Especialista em Tecnologia e IA</span></article>
+    <article class="member reveal"><b>FM</b><h3>Fernanda Machado</h3><span>Diretora de Marketing e Comunicação</span></article>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="final-particles"></div><div class="section-heading"><div class="eyebrow">14 • O FUTURO</div><h2>SEU LEGADO <em>COMEÇA AGORA.</em></h2><p>São Luís precisa de seus Guardiões.</p><a href="#inicio" class="btn btn-primary">VOLTAR AO INÍCIO ↑</a></div>
+</section>
+</main>
+
+<footer><div><img src="assets/outros/logo-econexa.jpeg" alt="ECONEXA GAMES"><span>ECONEXA: GUARDIÕES DA ILHA</span></div><p>Natureza. Tecnologia. Ação.</p></footer>
+
+<div id="modal" class="modal" aria-hidden="true"><div class="modal-backdrop"></div><div class="modal-box"><button class="modal-close">×</button><div id="modalContent"></div></div></div>
+<div id="toast" class="toast"></div>
+<button id="topBtn" class="top-btn">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
