@@ -28,3 +28,6 @@ Equipe 1
 ## Site do jogo
 O botão do jogo abre diretamente o site público da Eco Nexa Games em:
 https://vitoo-ti.github.io/econexa-games/
+
+## Otimização
+A versão otimizada remove dependências externas de fontes, reduz o custo das partículas e usa carregamento diferido do JavaScript para abrir mais rápido no GitHub Pages.

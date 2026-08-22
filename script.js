@@ -1,6 +1,6 @@
 const $=(s,p=document)=>p.querySelector(s), $$=(s,p=document)=>[...p.querySelectorAll(s)];
 
-window.addEventListener('load',()=>setTimeout(()=>$('#loader').classList.add('hide'),900));
+window.addEventListener('load',()=>setTimeout(()=>$('#loader').classList.add('hide'),180));
 
 const cursor=$('.cursor-glow');
 window.addEventListener('mousemove',e=>{cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px'},{passive:true});
@@ -9,7 +9,7 @@ const particles=[];
 const canvas=$('#particleCanvas'),ctx=canvas.getContext('2d');
 function resize(){canvas.width=innerWidth;canvas.height=innerHeight}
 resize();addEventListener('resize',resize);
-for(let i=0;i<95;i++) particles.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:Math.random()*1.8+.4,vx:(Math.random()-.5)*.15,vy:Math.random()*.22+.03,a:Math.random()*.45+.08});
+for(let i=0;i<55;i++) particles.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:Math.random()*1.8+.4,vx:(Math.random()-.5)*.15,vy:Math.random()*.22+.03,a:Math.random()*.45+.08});
 function draw(){
   ctx.clearRect(0,0,canvas.width,canvas.height);
   for(const p of particles){p.y-=p.vy;if(p.y<-10)p.y=canvas.height+10;p.x+=p.vx;if(p.x<-10)p.x=canvas.width+10;if(p.x>canvas.width+10)p.x=-10;
