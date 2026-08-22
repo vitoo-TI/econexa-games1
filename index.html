@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#06100d">
+  <meta name="description" content="Eco Nexa Games — Guardiões da Ilha. Uma experiência cinematográfica sobre administração, inovação e sustentabilidade.">
+  <title>ECO NEXA GAMES — Guardiões da Ilha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-core"></div>
+    <div class="loader-copy">
+      <span>ECO NEXA GAMES</span>
+      <strong>GUARDIÕES DA ILHA</strong>
+      <small>Iniciando experiência…</small>
+    </div>
+  </div>
+
+  <div class="cursor-glow"></div>
+  <canvas id="particleCanvas"></canvas>
+
+  <header class="hud">
+    <a class="brand" href="#inicio">
+      <span class="brand-orb"></span>
+      <span class="brand-text"><b>ECO NEXA</b><small>GAMES</small></span>
+    </a>
+    <nav id="mainNav">
+      <a class="active" href="#inicio">INÍCIO</a>
+      <a href="#empresa">A EMPRESA</a>
+      <a href="#equipe">EQUIPE</a>
+      <a href="#guardioes">GUARDIÕES</a>
+      <a href="#viloes">VILÕES</a>
+      <a href="#missoes">MISSÕES</a>
+      <a href="#adm">ADMINISTRAÇÃO</a>
+      <a href="#nex">NEX</a>
+      <a href="#curiosidades">CURIOSIDADES</a>
+      <a href="#projeto">PROJETO</a>
+    </nav>
+    <div class="cross-site"><a href="#inicio">EMPRESA</a><a href="https://vitoo-ti.github.io/econexa-games/" target="_blank" rel="noopener noreferrer">JOGO ↗</a></div>
+    <div class="mission-hud">
+      <span>MISSÃO</span>
+      <b id="missionCounter">01</b><em>/ 10</em>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir navegação">☰</button>
+  </header>
+
+  <main>
+    <section id="inicio" class="chapter hero chapter-light">
+      <div class="hero-bg">
+        <div class="city-grid"></div>
+        <div class="skyline"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="hero-orb orb-a"></div>
+        <div class="hero-orb orb-b"></div>
+        <div class="leaf leaf-a">✦</div>
+        <div class="leaf leaf-b">✦</div>
+      </div>
+      <div class="chapter-content hero-content">
+        <div class="eyebrow"><span></span> ADMINISTRAÇÃO • INOVAÇÃO • SUSTENTABILIDADE</div>
+        <p class="studio">ECO NEXA GAMES</p>
+        <h1>GUARDIÕES<br><span>DA ILHA</span></h1>
+        <p class="hero-lead">Tecnologia que conecta pessoas, criatividade e sustentabilidade.</p>
+        <p class="hero-sub">Uma missão para proteger o futuro.</p>
+        <div class="hero-actions">
+          <a class="cta cta-main" href="#empresa">EXPLORAR O UNIVERSO <span>↘</span></a>
+          <a class="cta cta-ghost" href="#equipe">CONHECER A EQUIPE</a>
+        </div>
+        <div class="scroll-hint"><span class="scroll-line"></span> EXPLORE <small>↓</small></div>
+      </div>
+      <div class="hero-corners">
+        <span>SLZ // 2026</span><span>ENX-01</span>
+      </div>
+    </section>
+
+    <section id="empresa" class="chapter chapter-dark reveal">
+      <div class="section-shell">
+        <div class="eyebrow">01 / A EMPRESA</div>
+        <div class="title-row">
+          <div>
+            <p class="overline">UMA IDEIA. UMA EQUIPE. UMA ILHA.</p>
+            <h2>O universo começa <span>pela conexão.</span></h2>
+          </div>
+          <p class="section-intro">A EcoNexa Games é uma empresa fictícia criada pela Equipe 1 como proposta interdisciplinar que integra Administração, tecnologia, criatividade, educação ambiental, sustentabilidade e cultura maranhense.</p>
+        </div>
+
+        <div class="nucleus-stage">
+          <div class="energy-ring ring-1"></div><div class="energy-ring ring-2"></div><div class="energy-ring ring-3"></div>
+          <div class="nucleus-core"><span>ECO</span><b>NEXA</b><small>CONNECTION CORE</small></div>
+          <div class="orbit-node n1">ADMINISTRAÇÃO</div>
+          <div class="orbit-node n2">TECNOLOGIA</div>
+          <div class="orbit-node n3">CRIATIVIDADE</div>
+          <div class="orbit-node n4">SUSTENTABILIDADE</div>
+          <div class="orbit-node n5">EDUCAÇÃO</div>
+          <div class="orbit-node n6">CULTURA</div>
+        </div>
+
+        <div class="data-grid">
+          <div class="stat"><strong data-count="10">0</strong><span>INTEGRANTES</span></div>
+          <div class="stat"><strong data-count="12">0</strong><span>GUARDIÕES</span></div>
+          <div class="stat"><strong data-count="6">0</strong><span>MISSÕES PRINCIPAIS</span></div>
+          <div class="stat"><strong data-count="1">0</strong><span>GRANDE AMEAÇA</span></div>
+          <div class="stat"><strong data-count="1">0</strong><span>MISSÃO COLETIVA</span></div>
+          <div class="stat text-stat"><strong>São Luís</strong><span>CENÁRIO</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="adm" class="chapter chapter-grid reveal">
+      <div class="section-shell">
+        <div class="eyebrow">02 / ADMINISTRAÇÃO</div>
+        <div class="title-row">
+          <div><h2>Por trás de todo grande universo, existe uma <span>grande estrutura.</span></h2></div>
+          <p class="section-intro">A administração transforma criatividade em organização. Planejamento, pessoas, recursos e resultados conectam a ideia ao que realmente pode ser executado.</p>
+        </div>
+
+        <div class="management-ui">
+          <div class="module-list">
+            <button class="module active" data-module="planejamento"><b>01</b> PLANEJAMENTO</button>
+            <button class="module" data-module="financeiro"><b>02</b> GESTÃO FINANCEIRA</button>
+            <button class="module" data-module="pessoas"><b>03</b> GESTÃO DE PESSOAS</button>
+            <button class="module" data-module="projetos"><b>04</b> GESTÃO DE PROJETOS</button>
+            <button class="module" data-module="comunicacao"><b>05</b> COMUNICAÇÃO</button>
+            <button class="module" data-module="marketing"><b>06</b> MARKETING</button>
+            <button class="module" data-module="parcerias"><b>07</b> PARCERIAS</button>
+            <button class="module" data-module="resultados"><b>08</b> RESULTADOS</button>
+          </div>
+          <div class="module-panel">
+            <div class="panel-glow"></div>
+            <span id="moduleCode">NX-PLN-01</span>
+            <h3 id="moduleTitle">Planejamento</h3>
+            <p id="moduleText">Definir objetivos, prioridades, recursos e caminhos para transformar o conceito em experiência.</p>
+            <div class="flow">
+              <span>IDEIA</span><i>↓</i><span>PLANEJAMENTO</span><i>↓</i><span>RECURSOS</span><i>↓</i><span>EQUIPE</span><i>↓</i><span>EXECUÇÃO</span><i>↓</i><span>RESULTADO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="equipe" class="chapter chapter-dark reveal">
+      <div class="section-shell">
+        <div class="eyebrow">03 / NOSSA EQUIPE</div>
+        <div class="title-row">
+          <div><h2>Os <span>arquitetos</span> da ilha.</h2><p class="overline">DEZ PESSOAS. DEZ ESPECIALIDADES. UMA MISSÃO.</p></div>
+          <p class="section-intro">Selecione um integrante para abrir uma ficha cinematográfica. Os espaços de foto abaixo estão preparados para receber as imagens reais da equipe.</p>
+        </div>
+        <div class="team-layout">
+          <div id="teamStage" class="team-stage">
+            <div class="portrait-placeholder"><span id="teamInitials">JC</span><small>FOTO REAL • SUBSTITUIR</small></div>
+            <div class="portrait-scan"></div>
+            <div class="team-scanline"></div>
+            <div class="team-nameplate"><small id="teamRole">DIRETORA GERAL / FUNDADORA</small><h3 id="teamName">JULIANE COELHO BENO</h3><p id="teamDesc">Liderança, visão sistêmica e proteção do conjunto.</p></div>
+            <button class="profile-btn" id="profileBtn">VER PERFIL ↗</button>
+          </div>
+          <div class="team-list" id="teamList"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter story reveal">
+      <div class="story-bg"><div class="story-grid"></div></div>
+      <div class="section-shell centered">
+        <div class="eyebrow">04 / PROCESSO CRIATIVO</div>
+        <h2>Como nasceu <span>uma ideia?</span></h2>
+        <div class="questions">
+          <article><small>01</small><p>E se os problemas ambientais pudessem se transformar em desafios?</p></article>
+          <article><small>02</small><p>E se os personagens representassem diferentes formas de proteger o meio ambiente?</p></article>
+          <article><small>03</small><p>E se essa aventura acontecesse em São Luís?</p></article>
+        </div>
+        <div class="reveal-answer"><span>ECO NEXA</span><b>GUARDIÕES DA ILHA</b></div>
+      </div>
+    </section>
+
+    <section class="chapter formula reveal">
+      <div class="section-shell">
+        <div class="eyebrow">05 / FÓRMULA CRIATIVA</div>
+        <h2>Problema → <span>Propósito.</span></h2>
+        <div class="formula-line">
+          <div class="formula-node"><b>🌎</b><span>PROBLEMA AMBIENTAL</span></div><i>→</i>
+          <div class="formula-node"><b>👾</b><span>VILÃO</span></div><i>→</i>
+          <div class="formula-node"><b>🦸</b><span>GUARDIÃO</span></div><i>→</i>
+          <div class="formula-node"><b>⚡</b><span>PODER</span></div><i>→</i>
+          <div class="formula-node"><b>🎮</b><span>MISSÃO</span></div><i>→</i>
+          <div class="formula-node"><b>♻️</b><span>SOLUÇÃO</span></div><i>→</i>
+          <div class="formula-node"><b>🌱</b><span>RECUPERAÇÃO</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guardioes" class="chapter guardians reveal">
+      <div class="section-shell">
+        <div class="eyebrow">06 / OS GUARDIÕES</div>
+        <div class="title-row"><div><h2>Do nosso mundo para o <span>mundo do jogo.</span></h2></div><p class="section-intro">Cada personagem nasce de uma função, uma habilidade ou um propósito. Escolha um guardião para abrir sua ficha.</p></div>
+        <div class="guardian-feature">
+          <div class="guardian-visual">
+            <div class="energy-aura"></div><div class="guardian-silhouette" id="guardianSilhouette">L</div>
+            <div class="guardian-overlay"><span id="guardianCode">GRD-01</span><h3 id="guardianName">LUNA</h3><p id="guardianRole">GUARDIÃ DA NATUREZA</p></div>
+          </div>
+          <div class="guardian-info">
+            <div class="guardian-power"><small>PODER</small><b id="guardianPower">REGENERAÇÃO</b></div>
+            <p id="guardianDesc">Uma presença conectada à biodiversidade, recuperação e ao equilíbrio natural.</p>
+            <div class="guardian-mini-grid">
+              <div><span>ATRIBUTO</span><b id="guardianAttr">NATUREZA</b></div>
+              <div><span>FUNÇÃO</span><b id="guardianFunc">RECUPERAÇÃO</b></div>
+              <div><span>STATUS</span><b class="online">ONLINE</b></div>
+            </div>
+          </div>
+        </div>
+        <div class="guardian-thumbs" id="guardianThumbs"></div>
+      </div>
+    </section>
+
+    <section class="chapter place reveal">
+      <div class="place-art"><div class="map-island"></div><div class="map-grid"></div><span class="pin p1">01</span><span class="pin p2">02</span><span class="pin p3">03</span><span class="pin p4">04</span></div>
+      <div class="section-shell place-content">
+        <div class="eyebrow">07 / SÃO LUÍS</div>
+        <h2>Uma ilha como <span>nenhuma outra.</span></h2>
+        <p>São Luís não foi escolhida apenas como cenário. A cidade representa identidade, cultura, natureza, território, memória e aventura.</p>
+        <div class="map-tabs">
+          <button class="map-tab active" data-map="centro">CENTRO HISTÓRICO</button>
+          <button class="map-tab" data-map="itaqui">ITAQUI-BACANGA</button>
+          <button class="map-tab" data-map="praias">PRAIAS</button>
+          <button class="map-tab" data-map="natural">ÁREA NATURAL</button>
+          <button class="map-tab" data-map="degradada">ÁREA DEGRADADA</button>
+          <button class="map-tab" data-map="industrial">ÁREA INDUSTRIAL</button>
+          <button class="map-tab" data-map="final">ÁREA FINAL</button>
+        </div>
+        <div class="map-panel"><span id="mapCode">MAP-SLZ-01</span><h3 id="mapTitle">Centro Histórico</h3><p id="mapText">Memória, cultura e identidade. Um território que transforma arquitetura e história em parte da aventura.</p></div>
+      </div>
+    </section>
+
+    <section class="chapter reveal identity">
+      <div class="section-shell centered">
+        <div class="eyebrow">08 / DE NÓS PARA OS GUARDIÕES</div>
+        <h2>Antes de serem heróis, eram parte da <span>nossa equipe.</span></h2>
+        <p class="section-intro center">Antes de terem poderes, tinham histórias. Cada personagem nasceu de um integrante da EcoNexa Games.</p>
+        <div class="identity-flow">
+          <span>PESSOA</span><i>↓</i><span>PERSONAGEM</span><i>↓</i><span>PODER</span><i>↓</i><span>FUNÇÃO</span><i>↓</i><span>PROPÓSITO</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="viloes" class="chapter villains reveal">
+      <div class="villain-fog"></div>
+      <div class="section-shell">
+        <div class="eyebrow danger">09 / OS VILÕES</div>
+        <h2>Quando a poluição <span>ganha forma.</span></h2>
+        <div class="villain-grid" id="villainGrid"></div>
+
+        <div class="tritanus">
+          <div class="tritanus-figure"><div class="toxic-core"></div><span>TRI</span></div>
+          <div class="tritanus-copy"><div class="eyebrow danger">AMEAÇA FINAL</div><h3>TRITANUS</h3><p class="tagline">O inimigo final não nasceu sozinho.</p><p>Tritanus cresce conforme os problemas ambientais se acumulam. Quanto maior a degradação, maior a ameaça.</p><div class="equation"><span>RESÍDUOS</span><b>+</b><span>POLUIÇÃO</span><b>+</b><span>CONTAMINAÇÃO</span><b>+</b><span>DEGRADAÇÃO</span><b>=</b><strong>TRITANUS</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="missoes" class="chapter missions reveal">
+      <div class="section-shell">
+        <div class="eyebrow">10 / MISSÕES</div>
+        <div class="title-row"><div><h2>Selecione sua <span>missão.</span></h2></div><p class="section-intro">Uma interface de campanha inspirada nos menus de videogames. Cada missão conecta problema, território, guardiões e recompensa.</p></div>
+        <div class="mission-layout">
+          <div class="mission-list" id="missionList"></div>
+          <div class="mission-detail">
+            <div class="mission-top"><span id="missionLocal">CENTRO HISTÓRICO</span><b id="missionStatus">DISPONÍVEL</b></div>
+            <h3 id="missionTitle">O PROBLEMA DOS RESÍDUOS</h3>
+            <div class="mission-info-grid"><div><span>PROBLEMA</span><p id="mProblem">Resíduos e descarte inadequado.</p></div><div><span>GUARDIÕES</span><p id="mGuard">LUNA • JULIANE</p></div><div><span>OBJETIVO</span><p id="mObjective">Investigar, localizar e reduzir o foco de resíduos.</p></div><div><span>RECOMPENSA</span><p id="mReward">♻️ 250 PONTOS DE SUSTENTABILIDADE</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="nex" class="chapter nex reveal">
+      <div class="nex-screen">
+        <div class="terminal-grid"></div><div class="nex-orb"></div>
+        <div class="terminal-window">
+          <div class="terminal-head"><span>NEX / INTELLIGENCE CORE</span><i>● ● ●</i></div>
+          <div class="terminal-body">
+            <p>> inicializando conexão…</p><p>> analisando território: <b>SÃO LUÍS</b></p><p>> identificando ameaças: <b class="danger-text">7 ATIVOS</b></p><p>> calibrando guardiões…</p><p>> sincronização <span class="bar"><i></i></span> 100%</p><p class="nex-output">NEX: <strong>INTELIGÊNCIA QUE CONECTA.</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="section-shell nex-copy"><div class="eyebrow">11 / NEX</div><h2>Inteligência que <span>conecta.</span></h2><p>A NEX é uma IA narrativa e funcional responsável por análise, investigação, identificação, pistas, fraquezas, orientação e estratégia.</p><div class="nex-skills"><span>ANÁLISE</span><span>INVESTIGAÇÃO</span><span>IDENTIFICAÇÃO</span><span>PISTAS</span><span>FRAQUEZAS</span><span>ORIENTAÇÃO</span><span>ESTRATÉGIA</span></div></div>
+    </section>
+
+    <section class="chapter gameplay reveal">
+      <div class="section-shell centered"><div class="eyebrow">12 / JOGABILIDADE</div><h2>O ciclo de uma <span>missão.</span></h2><div class="game-flow"><span>PROBLEMA</span><i>↓</i><span>INVESTIGAÇÃO</span><i>↓</i><span>ESCOLHA DO GUARDIÃO</span><i>↓</i><span>HABILIDADE</span><i>↓</i><span>COMBATE</span><i>↓</i><span>RECUPERAÇÃO</span><i>↓</i><span>RECOMPENSA</span></div><div class="reward-row"><div>♻️<b>PONTOS DE SUSTENTABILIDADE</b></div><div>💎<b>CRISTAIS VERDES</b></div><div>🏅<b>MEDALHAS</b></div><div>⚡<b>NOVOS PODERES</b></div><div>🦸<b>NOVOS GUARDIÕES</b></div><div>🗺️<b>NOVAS ÁREAS</b></div></div></div>
+    </section>
+
+    <section id="curiosidades" class="chapter chapter-dark reveal">
+      <div class="section-shell"><div class="eyebrow">13 / CURIOSIDADES</div><h2>Detalhes que formam o <span>universo.</span></h2><div class="curiosity-grid" id="curiosityGrid"></div></div>
+    </section>
+
+    <section class="chapter innovation reveal">
+      <div class="section-shell centered"><div class="eyebrow">14 / INOVAÇÃO</div><h2>Inovação não é apenas <span>tecnologia.</span></h2><div class="innovation-map"><div>PROBLEMAS AMBIENTAIS<span>→</span>VILÕES</div><div>SOLUÇÕES<span>→</span>PODERES</div><div>EDUCAÇÃO<span>→</span>MISSÕES</div><div>SÃO LUÍS<span>→</span>UNIVERSO</div><div>CULTURA<span>→</span>IDENTIDADE</div><div>ADMINISTRAÇÃO<span>→</span>ESTRUTURA</div></div></div>
+    </section>
+
+    <section id="projeto" class="chapter finale reveal">
+      <div class="finale-glow"></div>
+      <div class="section-shell centered">
+        <div class="eyebrow">15 / O GRANDE PROPÓSITO</div>
+        <div class="finale-script" id="finaleScript">
+          <p>PROTEGER A ILHA</p><p>É UMA MISSÃO COLETIVA.</p><p>Nenhum personagem.<br>Nenhum poder.<br>Nenhuma tecnologia.<br>Nenhuma pessoa.<br>É suficiente sozinha.</p><p class="strong">É A COOPERAÇÃO QUE TORNA A EQUIPE FORTE.</p>
+        </div>
+        <div class="team-silhouette"><span>JC</span><span>JG</span><span>PH</span><span>VH</span><span>GG</span><span>AR</span><span>RS</span><span>LC</span><span>HC</span><span>MF</span></div>
+        <h2>De pessoas a <span>Guardiões.</span></h2>
+        <p class="finale-line">Cada pessoa, um poder. Cada poder, uma responsabilidade. Todos juntos, uma missão.</p>
+        <div class="finale-tag">PROTEGER A ILHA.</div>
+        <button class="restart" onclick="window.scrollTo({top:0,behavior:'smooth'})">↺ REINICIAR EXPERIÊNCIA</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><strong>ECO NEXA GAMES</strong><span>Tecnologia que conecta pessoas, criatividade e sustentabilidade.</span></div>
+    <div><span>IEMA PLENO SÃO LUÍS MARIA MÔNICA VALE</span><span>Curso Técnico Integrado em Administração — Sala 302</span><span>2026 • Docente: Jozielton Diniz • Equipe 1</span></div>
+    <div class="footer-note">Projeto acadêmico fictício desenvolvido para fins educacionais.</div>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="1"></div>
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose">×</button>
+      <div class="eyebrow">PROFILE // NEXA DATABASE</div>
+      <div class="modal-portrait"><span id="modalInitials">JC</span><small>FOTO REAL • ADICIONAR IMAGEM</small></div>
+      <h3 id="modalName"></h3>
+      <p class="modal-role" id="modalRole"></p>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
